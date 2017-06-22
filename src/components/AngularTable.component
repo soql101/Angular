@@ -92,7 +92,7 @@
                     </thead>
                     <tbody>
                         <tr ng-repeat="item in pagedItems[currentPage] | orderBy:sortingOrder:reverse">
-                            <td><a href="#/detail/{{item.Id}}">Open</a></td>
+                            <td><a href="/{{item.Id}}">Open</a></td>
                             <apex:repeat value="{!fields}" var="fld">
                                 <td>{{item['{!fld}']}}</td>
                             </apex:repeat>
